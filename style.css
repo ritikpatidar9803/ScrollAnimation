@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 6.25rem;
+    font-weight: 600;
+    background: linear-gradient(124deg, #FFF -134.32%, #FFF -30.04%, rgba(255, 255, 255, 0.00) 132.17%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+p {
+    color: #FFF;
+    font-size: 1.9rem;
+    font-weight: 400;
+    line-height: 74%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    line-height: normal;
+    background-color: #000;
+}
+
+.wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.btn {
+    padding: 2.6875rem 5.625rem;
+    border-radius: 29px;
+    background: #FFF;
+    font-size: 2.5rem;
+    color: #000;
+    box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+header {
+    padding: 4.3rem 14.6rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.light-bg {
+    position: absolute;
+    top: -120%;
+    width: 44rem;
+    height: 44rem;
+    border-radius: 705px;
+    background: linear-gradient(270deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
+    filter: blur(279px);
+}
+
+header .logo {
+    width: 5.6rem;
+}
+
+header .menu {
+    display: flex;
+    align-items: center;
+    gap: 3.75rem;
+}
+
+header .menu a {
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+header .menu a.btn {
+    color: #000;
+    font-size: 1.5rem;
+    border-radius: 12px;
+    font-weight: 500;
+    padding: 1rem 2.7rem;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}
+
+.picture {
+    height: 60vh;
+}
+
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20vh;
+    height: 80vh;
+}
+
+.hero .container .btn {
+    color: #000;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 74%;
+    margin-top: 6.375rem;
+    width: fit-content;
+}
+
+.hero img {
+    position: fixed;
+    height: 30vw;
+    transition: 1.5s all ease;
+}
+
+.hero .img1 {
+    left: -20%;
+    top: 30%
+}
+
+.hero .img2 {
+    right: -20%;
+    top: 30%
+}
+
+.hero .blank.firstview .img1 {
+    left: 30%;
+}
+
+.hero .blank.firstview .img2 {
+    right: 30%;
+}
+
+.hero .blank.secondview .img1 {
+    left: 0%;
+    top: 80%;
+    transform: rotate(-90deg);
+}
+
+.hero .blank.secondview .img2 {
+    display: none;
+}
+
+.hero .blank.thirdview .img1 {
+    left: 0%;
+    top: -23%;
+    transform: rotate(-90deg);
+}
+
+.hero .blank.thirdview .img2 {
+    display: none;
+
+}
+
+.description {
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 9.06rem;
+}
+
+.content {
+    width: 50%;
+}
+
+.description .content li::marker {
+    color: #FFF;
+    font-size: 3.125rem;
+
+}
+
+li {
+    color: #FFF;
+    font-size: 3.125rem;
+    font-weight: 400;
+    line-height: 163.5%;
+}
+
+.description .images {
+    width: 50%;
+    align-self: flex-start;
+    position: relative;
+
+}
+
+.description .images #zoom-bg,
+.description .images #zoomed-part {
+    display: none;
+    transition: 1.5s all ease;
+}
+
+.description .images img:first-child {
+    height: 60vh;
+    position: fixed;
+    top: 32%;
+    left: 10%;
+}
+
+.description .images img.zoomed-part {
+    height: 43vh;
+    position: fixed;
+    top: 32%;
+    left: 21%;
+    border-radius: 50%;
+}
+
+.grip {
+    height: 100vh;
+    padding-top: 9.06rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.grip li {
+    list-style: none;
+    margin-top: 1.5rem;
+}
+
+@media (max-width:1850px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:1650px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:1440px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:1280px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media (max-width:1180px) {
+    html {
+        font-size: 9px;
+    }
+}
+
+@media (max-width:980px) {
+    html {
+        font-size: 8px;
+    }
+}
